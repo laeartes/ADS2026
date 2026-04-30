@@ -1,0 +1,77 @@
+.LOG
+
+3-ia mini užduotėlė: Pagal pateiktą duomenų rinkinį nupiešti (rankomis)
+dvejetainį paieškos medį. (Duodamas studentų sąrašas: pradedant nuo savęs
+nupiešti medį pagal vardus ir kitą medį pagal pavardes).
+
+„Nupiešti (rankomis)“ čia suprantame tokiu būdu: jei norime piešti tokį
+
+    lapcia
+   ┌───┴───┐
+ apcia  tapcia
+       ┌───┴───┐
+     muska   tuzka
+
+medį, tai „piešimo“ procesą užduotėlės sprendime užrašome:
+
+lapcia -> apcia;  // left
+lapcia -> tapcia; // right
+tapcia -> muska;  // left
+tapcia -> tuzka;  // right
+
+
+Medyje pagal vardus rikiavimo raktas -- pirmi du simboliai ir paskutiniai
+keturi; pagal pavardes -- trečias ir ketvirtas bei paskutiniai keturi
+simboliai.
+
+Čia suprantame, jog sąrašas yra ciklinis. Sekantis sąrašo elementas po
+paskutiniojo yra pirmas sąrašo elementas. Sprendimu reikia aprašyti
+„piešimo“ procesą, o ne gauto piešinio rezultatą.
+
+Šį Questions.txt failą patalpinkite
+U:\www\ADS2026\Questions.txt
+ir jame pateikite savo mini užduotėles sprendimą.
+
+Taip pat, šiame faile galite pateikti ir savo individualius klausimus.
+
+----------------------------------------------------------------------------
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+pagal vardus:
+myme2045 -> aima2290;  // left
+myme2045 -> zyra2031;  // right
+aima2290 -> dape2270;  // right
+dape2270 -> aupo1812;  // left
+dape2270 -> gaka2022;  // right
+aupo1812 -> arst2200;  // right
+gaka2022 -> erta2388;  // left
+gaka2022 -> gusa1802;  // right
+erta2388 -> diza2294;  // left
+erta2388 -> joun2378;  // right
+diza2294 -> fave1859;  // left
+joun2378 -> hava1818;  // left
+zyra2031 -> topr2071;  // left
+topr2071 -> tori2279;  // right
+
+pagal pavardes:
+myme2045 -> dape2270;  // right
+dape2270 -> aima2290;  // left
+dape2270 -> aupo1812;  // right
+aupo1812 -> gaka2022;  // left
+aupo1812 -> zyra2031;  // right
+zyra2031 -> topr2071;  // left
+zyra2031 -> tori2279;  // right
+tori2279 -> gusa1802;  // right
+gusa1802 -> arst2200;  // right
+arst2200 -> erta2388;  // right
+erta2388 -> joun2378;  // right
+joun2378 -> hava1818;  // right
+hava1818 -> diza2294;  // right
+diza2294 -> fave1859;  // left
+
+klausimeliai destytojui:
+1. ar šioje užduotyje reikia balansuoti medį (AVL, Red-Black), ar pakanka paprasto BST?
+2. ką darom lygybės atveju? pvz. jei du studentai turi vienodus rikiavimo raktus?
+3. kada išvis naudotume BST vietoj, pvz, hash map? nes paieška BST yra O(log n) o hash map O(1) vidutiniškai, tai kada verta rinktis vieną ar kitą duomenų struktūrą?
+4. kiek išvis dažnai darbe būna momentų, kai reikia pačiam implementuoti duomenų struktūras, o ne naudoti jau paruoštas bibliotekas, arba kaip nors jas modifikuoti? ar tai dažniau pasitaiko akademinėje aplinkoje, ar realiame darbe?
+
